@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Workout Calendar</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #workout-display { margin-top: 20px; font-size: 18px; }
+    </style>
+</head>
+<body>
+
+    <h2>Select a Date to View Workout</h2>
+    <input type="date" id="datePicker">
+    <button onclick="loadWorkout()">View Workout</button>
+
+    <div id="workout-display"></div>
+
+    <script>
+        // List of workouts by date
+        const workouts = {
+            "2025-03-10": "Workout A - Upper Body Strength: <br> - Pull-ups <br> - Push-ups <br> - Dips",
+            "2025-03-11": "Workout B - Leg Day: <
